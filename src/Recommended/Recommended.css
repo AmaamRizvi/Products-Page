@@ -9,3 +9,37 @@
   margin-top: 20px;
   font-size: 20px;
 }
+
+@media (max-width: 1024px) {
+  .recommended-flex {
+    margin-left: 10rem;
+  }
+
+  .recommended-title {
+    margin-left: 10rem;
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .recommended-flex {
+    flex-direction: column;
+    margin-left: 5rem;
+  }
+
+  .recommended-title {
+    margin-left: 5rem;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .recommended-flex {
+    margin-left: 2rem;
+  }
+
+  .recommended-title {
+    margin-left: 2rem;
+    font-size: 14px;
+  }
+}

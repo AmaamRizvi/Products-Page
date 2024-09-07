@@ -11,6 +11,7 @@
   border: 2px solid #ededed;
   padding: 20px;
   cursor: pointer;
+  flex: 1 1 calc(25% - 40px); /* Adjust card width with margin */
 }
 
 .card-img {
@@ -44,4 +45,47 @@
 
 .bag-icon {
   color: #535353;
+}
+
+@media (max-width: 1024px) {
+  .card-container {
+    margin-left: 10rem;
+  }
+
+  .card {
+    flex: 1 1 calc(33% - 40px); /* Three cards per row */
+  }
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    margin-left: 5rem;
+  }
+
+  .card {
+    flex: 1 1 calc(50% - 40px); /* Two cards per row */
+  }
+
+  .card-img {
+    width: 10rem; /* Adjust image size */
+  }
+}
+
+@media (max-width: 480px) {
+  .card-container {
+    margin-left: 2rem;
+  }
+
+  .card {
+    flex: 1 1 calc(100% - 40px); /* One card per row */
+  }
+
+  .card-img {
+    width: 8rem; /* Further adjust image size */
+  }
+
+  .card-price {
+    flex-direction: column; /* Stack price items vertically */
+    align-items: flex-start; /* Align items to start */
+  }
 }

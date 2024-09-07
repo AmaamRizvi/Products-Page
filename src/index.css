@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
   padding: 0;
   margin: 0;
@@ -5,22 +6,72 @@
   font-family: sans-serif;
 }
 
+
+html {
+  font-size: 100%; 
+}
+
+body {
+  font-size: 1rem; 
+}
+
+/* Links */
 a {
   text-decoration: none;
   color: rgb(97, 97, 97);
+  transition: color 0.3s ease;
 }
 
+a:hover {
+  color: #555;
+}
+
+/* List items */
 li {
   list-style: none;
 }
 
+/* Button styles */
 .btns {
   padding: 10px 20px;
   margin-right: 6px;
   background: transparent;
-  border: none;
   border: 0.6px solid #ccc;
   border-radius: 5px;
   color: #323232;
   cursor: pointer;
+  font-size: 1rem; 
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btns:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+
+
+@media (max-width: 768px) {
+  .btns {
+    padding: 8px 16px; 
+    font-size: 0.9rem; 
+    margin-right: 4px; 
+  }
+
+  a {
+    font-size: 0.9rem; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .btns {
+    padding: 6px 12px; 
+    font-size: 0.8rem; 
+    margin-right: 2px; 
+  }
+
+  a {
+    font-size: 0.8rem; 
+  }
 }

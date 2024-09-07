@@ -71,3 +71,53 @@
   margin-top: 3rem;
   border-color: #f7f7f7;
 }
+
+@media (max-width: 768px) {
+  .sidebar-title {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .sidebar-items {
+    margin-top: 18px;
+  }
+
+  .sidebar-label-container {
+    padding-left: 30px;
+    margin-bottom: 10px;
+  }
+
+  .checkmark {
+    height: 18px;
+    width: 18px;
+  }
+
+  .line {
+    margin-top: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar-title {
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  .sidebar-items {
+    margin-top: 16px;
+  }
+
+  .sidebar-label-container {
+    padding-left: 25px;
+    margin-bottom: 8px;
+  }
+
+  .checkmark {
+    height: 16px;
+    width: 16px;
+  }
+
+  .line {
+    margin-top: 2rem;
+  }
+}

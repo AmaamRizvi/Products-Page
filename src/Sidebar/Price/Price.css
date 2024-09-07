@@ -5,3 +5,23 @@
 .ml {
   margin-left: 20px;
 }
+
+@media (max-width: 768px) {
+  .price-title {
+    margin-top: 15px; /* Slightly reduce margin for smaller screens */
+  }
+
+  .ml {
+    margin-left: 15px; /* Slightly reduce margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .price-title {
+    margin-top: 10px; /* Further reduce margin for extra small screens */
+  }
+
+  .ml {
+    margin-left: 10px; /* Further reduce margin for extra small screens */
+  }
+}
